@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="index-header" id="index-header">
+        <section class="index-section1">
+            <div class="container">
+                <div class="row">
+                    <div class="main-nav-div">
+                        <ul class="nav-list nav list-unstyled justify-content-evenly ">
+                            <li class="nav-item">
+                                <a href="#index-main" class="word text-decoration-none text-capitalize">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                                    </svg>
+                                        <span class="visually-hidden"></span>
+                                    home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#booklet" class="word text-decoration-none text-capitalize">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                                    </svg>
+                                        <span class="visually-hidden"></span>
+                                    about
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#project-section" class="word text-decoration-none text-capitalize">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+                                        <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+                                    </svg>
+                                        <span class="visually-hidden"></span>
+                                    projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact-section" class="word text-decoration-none text-capitalize">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                                    </svg>
+                                        <span class="visually-hidden"></span>
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="index-main" id="index-main">
+        <section class="index-section2">
+            <div class="container">
+                <div class="row">
+                    <div class="div-words col-md-6">
+                        <p class="greet text-capitalize">hello world, i am ....</p>
+                        <h1 class="index-name text-capitalize">jason liu</h1>
+                        <p class="index-stuff text-capitalize">chief web officer</p>
+                        <p class="wanna">wanna be</p>
+                        <p class="index-text">A student of the great <a href="https://www.linkedin.com/in/herbert-brown-592a96145" target="_blank" class="herbs-link text-capitalize text-decoration-none">herbivore brown</a> finding my way through the world of coding not knowing if I will make it out. I enjoy coding because I like the problem solving aspect of it but hate the process of getting there. But a wise <a href="https://www.linkedin.com/in/herbert-brown-592a96145" target="_blank" class="herbs'link text-uppercase text-decoration-none">"old"</a> man has told me to "stay in the car", whatever that means.</p>
+                    </div>
+                    <div class="sm d-sm d-lg-none">
+                        <img src="images/me.jpeg" alt="pic of jason liu" class="sm-pic w-100">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="flip-card d-none d-lg-block">
+                            <div class="cover">
+                                <img src="images/jason.jpeg" alt="picture of jason liu" class="img-fluid">
+                                <img src="images/coding squad.jpg" alt="picture of ms coding squad" class="img-fluid">
+                            </div>
+                            <div class="content">
+                                <h2 class="flip text-capitalize"></h2>
+                                <img src="images/jjk.jpg" alt="picture of jjk squad" class="jjk w-100">
+                                <p  class="flip-text"> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none d-md-block">
+                    <div class="arrow d-flex col-md-11 justify-content-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z" class=" d-none d-lg-block"/>
+                        </svg>
+                        <p class="arrow-text text-capitalize  d-none d-lg-block">hover over me</p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="main-section" id="booklet">
+            <div class="container">
+                <div class="row">
+                    <!-- Back Button -->
+                    <div class="bout">
+                        <h1 class="boutz text-uppercase">about me</h1>
+                    </div>
+                    <button id="back-btn" class="b col-md-4 d-none d-lg-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                        </svg>
+                        <span class="visually-hidden"></span>
+                    </button>
+                    <!-- Book -->
+                    <div class="sm-book d-sm d-lg-none">
+                        <h1 class="sm-h1">
+                            <p class="sm-title text-capitalize">who am i?</p>
+                        </h1>
+                        <img src="images/coding squad.jpg" alt="ms coding squad" class="squadz w-100">
+                            <p class="sm-text">Hi, Hello. My name is Jason Liu and I am a full stack web developing coding FANATIC. Just kidding... I'm currently a student at the Mississippi Coding Academy and I want to pursue a career in web developing. I was born in Manhatten, New York but I don't know how I ended up in Mississippi. I have too many hobbies to list so here are a few of my hobbies are watching my favorite team the NYG lose, watching anime, and playing video games.</p>
+                    </div>
+                    <div class="book col-md-4 d-none d-lg-block" id="book">
+                        <!-- page 1 -->
+                        <div class="page" id="page1">
+                            <div class="front">
+                                <div class="front-page" id="p1">
+                                    <h1 class="about text-capitalize">jason who?</h1>
+                                    <h2 class="author text-capitalize">by: jason liu</h2>
+                                    <img src="images/me.jpeg" alt="picture of me" class="me w-50">
+                                    <img src="images/bears.jpg" alt="strings of numbers and code" class="bears w-100 h-100">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-page" id="b1">
+                                    <img src="images/giants.jpg" alt="nyg logo" class="nyg w-100 h-100">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- page 2 -->
+                        <div class="page" id="page2">
+                            <div class="front">
+                                <div class="front-page" id="p2">
+                                    <h3 class="chapter1 text-capitalize">chapter 1: who am i</h3>
+                                    <p class="chapter1-text">Hi, Hello. My name is Jason Liu and I am a full stack web developing coding FANATIC. Just kidding... I'm currently a student at the Mississippi Coding Academy and I want to pursue a career in web developing. I was born in Manhatten, New York but I don't know how I ended up in Mississippi. I have too many hobbies to list so here are a few of my hobbies are watching my favorite team the NYG lose, watching anime, and playing video games.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-page" id="b2">
+                                    <img src="images/gp.jpg" alt="girl coding" class="gp w-100 h-100">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- page 3 -->
+                        <div class="page" id="page3">
+                            <div class="front">
+                                <div class="front-page" id="p3">
+                                    <img src="images/gif.gif" alt="gif of frantic coding" class="gif w-100"> 
+                                    <img src="images/code.png" alt="guy coding" class="codez w-100">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-page" id="b3">
+                                    <h3 class="chapter2 text-capitalize" id="projectz">chapter 2: how did i get here?</h3>
+                                    <img src="images/ralance.jpg" alt="michael valenica" class="ralance w-50">
+                                    <img src="images/rog.jpg" alt="roger valenica" class="rog w-50">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- page 4 -->
+                        <div class="page" id="page4">
+                            <div class="front">
+                                <div class="front-page" id="p4">
+                                    <p class="chapter2-text">
+                                        My original plan out of high school was to attend college get some type of degree and hopefully get a job and move on with life. But that didn't go too well. Before graduating high school I heard about this Mississippi Coding Academy that a few friends graduated from but didn't think too much about it. I first attend Mississippi State University and then Hinds Community College but found out that school isn't for me. I couldn't figure out what I wanted to do while all my friends had it all figured out. So I thought, why not give the academy a shot.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-page" id="b4">
+                                    <h3 class="chapter3 text-capitalize">chapter 3: who's teaching</h3>
+                                    <img src="images/herbo.jpg" alt="picture of Herbert Brown" class="herbo w-50">
+                                    <p class="run text-capitalize">run on sight</p>
+                                    <p class="chapter3-text">This is a Herbivore Brown! Very rare to see in the wild because they are basically extinct, there is only one left in the world. Herbs typically roams in warm climate area, preferably with AC. Don't let the name fool ya, Herbs practically eat anything.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- page 5 -->
+                        <div class="page" id="page5">
+                            <div class="front">
+                                <div class="front-page" id="p5">
+                                    <h3 class="chapter4 text-capitalize">chapter 4: learned and learning</h3>
+                                    <p class="proficiencies text-capitalize">proficiencies:</p>
+                                    <ul class="proficient-list text-capitalize">
+                                        <li class="proficient-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                                            <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                                            </svg>html
+                                        </li>
+                                        <li class="proficient-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                                            <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                                            </svg>css
+                                        </li>
+                                        <li class="proficient-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                                            <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                                            </svg>bootstrap
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-page" id="b5">
+                                    <h1 class="endz text-capitalize" id="projectz">to be continue...</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Next Button --> 
+                    <button id="next-btn" class="n col-md-4 d-none d-lg-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                        <span class="visually-hidden"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="porject-section" id="project-section">
+            <div class="container">
+                    <h2 class="project-name">Projects</h2>
+                <div class="row">
+                    <div class="project col-md-4 img-row">
+                        <img src="images/venedor.png" alt="venedor page" class="venedor figure-img img-fluid w-100 h-50">
+                            <a href="https://jasonliuwho.github.io/vendor/" target="_blank">
+                                <div class="img-overlay img-overlay-blur d-none d-md-block">
+                                    <p class="demo text-capitalize">demo website</p>
+                                </div>
+                            </a>
+                                <h3 class="project-title text-capitalize">
+                                    <a href="https://github.com/JasonLiuWho/vendor" target="_blank" class="venedor text-decoration-none">venedor</a>
+                                </h3>
+                                <p class="project-text">Html, Css, Bootstrap</p>
+                    </div>
+                    <div class="project col-md-4 img-row">
+                            <img src="images/manga store.png" alt="manga store page" class="manga figure-img img-fluid w-100 h-50">
+                            <a href="https://jasonliuwho.github.io/store/" target="_blank">
+                                <div class="img-overlay img-overlay-blur d-none d-md-block">
+                                    <p class="demo text-capitalize">demo website</p>
+                                </div>
+                            </a>
+                                <h3 class="project-title text-capitalize">
+                                    <a href="https://github.com/JasonLiuWho/store" target="_blank" class="store text-decoration-none">manga store</a>
+                                </h3>
+                                <p class="project-text">Html, Css, Bootstrap</p>
+                    </div>
+                    <div class="project col-md-4 img-row">
+                            <img src="images/figma.png" alt="figma page" class="figma figure-img img-fluid w-100 h-50">
+                            <a href="https://jasonliuwho.github.io/figma/" target="_blank">
+                                <div class="img-overlay img-overlay-blur d-none d-md-block">
+                                    <p class="demo text-capitalize">demo website</p>
+                                </div>
+                            </a>
+                                <h3 class="project-title text-capitalize">
+                                    <a href="https://github.com/JasonLiuWho/figma" target="_blank" class="figma text-decoration-none">figma</a>
+                                </h3>
+                                <p class="project-text">Html, Css, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="project col-md-4 img-row">
+                        <img src="images/restaurant.png" alt="restaurant page" class="restaurant figure-img img-fluid w-100 h-50">
+                        <a href="https://jasonliuwho.github.io/restaurant/" target="_blank">
+                            <div class="img-overlay img-overlay-blur d-none d-md-block">
+                                <p class="demo text-capitalize">demo website</p>
+                            </div>
+                        </a>
+                            <h3 class="project-title text-capitalize">
+                                <a href="https://github.com/JasonLiuWho/restaurant" target="_blank" class="rest text-decoration-none">restaurant</a>
+                            </h3>
+                            <p class="project-text">Html, Css, Bootstrap</p>
+                    </div>
+                    <div class="project col-md-4 img-row">
+                        <img src="images/detroix.png" alt=" detroix page" class="detroix figure-img img-fluid w-100 h-50">
+                        <a href="https://jasonliuwho.github.io/detroix/" target="_blank">
+                            <div class="img-overlay img-overlay-blur d-none d-md-block">
+                                <p class="demo text-capitalize">demo website</p>
+                            </div>
+                        </a>
+                            <h3 class="project-title text-capitalize">
+                                <a href="https://github.com/JasonLiuWho/detroix" target="_blank" class="detroix text-decoration-none">detroix</a>
+                            </h3>
+                            <p class="project-text">Html, Css</p>
+                    </div>
+                    <div class="project col-md-4 img-row">
+                            <img src="images/bloom.png" alt="bloom page" class="bloom figure-img img-fluid w-100 h-50">
+                            <a href="https://jasonliuwho.github.io/bloom/" target="_blank">
+                                <div class="img-overlay img-overlay-blur d-none d-md-block d-block">
+                                    <p class="demo text-capitalize">demo website</p>
+                                </div>
+                            </a>
+                                <h3 class="project-title text-capitalize">
+                                    <a href="https://github.com/JasonLiuWho/bloom" target="_blank" class="bloom text-decoration-none">bloom</a>
+                                </h3>
+                                <p class="project-text">Html, Css</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <div class="container">
+                <h1 class="touch text-capitalize" id="touch">contacts</h1>
+                <div class="row justify-content-center flex-column">
+                    <div class="image-div col-4 d-block mx-auto">
+                        <img src="images/get in touch.gif" alt="gif of getting in touch" class="get w-100 py-5">
+                    </div>
+                    <div class="contact-socials col-4 d-block mx-auto text-center">
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/jason-liu-b9816a297" target="_blank" class="email text-capitalize text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                                linkedin
+                            </a>
+                        </div>
+                        <div class="github text-capitalize text-decoration-none">
+                            <a href="https://github.com/jasonliuwho" target="_blank" class="github text-capitalize text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                github
+                            </a>
+                        </div>
+                        <div class="email">
+                            <a href="https://accounts.google.com/" target="_blank" class="email text-capitalize text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                                email:
+                            </a>
+                            jasonliu.business@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-pic col-3 d-block mx-auto">
+                        <img src="images/touch.png" alt="pic of social media icons" class="socials w-100 py-5">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="index-footer" id="index-footer">
+        <p class="colophon">site by Jason Liu &copy;2023</p>
+    </footer>
+</body>
+</html>

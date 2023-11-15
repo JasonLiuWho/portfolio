@@ -1,0 +1,632 @@
+:root {
+    --blue: #66fcf1;
+    --words: #45a19e;
+    --bg: #1f2833;
+    --orange: #f8a100;
+    --black: #28282B;
+    --teal: #2e8b57;
+    --font-family1: 'Cinzel', serif;
+    --font-family2: 'Nosifer', sans-serif;
+    --font-family3: 'Space Mono', monospace;
+    --font-family4: 'VT323', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+} 
+
+/* ----Header---- */
+
+.index-header {
+    position: fixed;
+    z-index: 100;
+    height: 50px;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+.index-section1 {
+    background-color: var(--bg);
+}
+
+.header { 
+    height: 70px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header-section {
+    background-color: var(--bg);
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    color: var(--blue);
+}
+
+.nav-list {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.nav-item {
+    color: var(--blue);
+}
+
+.word {
+    color: var(--blue);
+}
+
+.word:hover {
+    color: var(--orange);
+}
+
+/* --------Main-------- */
+
+.index-main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+} 
+
+.index-section2 {
+    padding: 100px 0;
+}
+
+.greet {
+    color: var(--orange);
+    font-family: var(--font-family4);
+    font-size: larger;
+}
+
+.index-name {
+    color: var(--blue);
+    font-family: var(--font-family2);
+}
+
+.index-stuff {
+    font-size: larger;
+    color: var(--orange);
+    font-family: var(--font-family3);
+}
+
+.index-text {
+    color: var(--blue);
+    font-family: var(--font-family4);
+    font-size: larger;
+}
+
+.get {
+    border-radius: 50%;
+}
+
+.linkedin, .github, .email {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--orange);
+}
+
+.flip-card {
+    /* write mediaqurries */
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-left: 250px;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4),
+        inset 300px 0 50px rgba(0, 0, 0, 0.4);
+    transform: perspective(2000px) rotateZ(0);
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: powderblue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+/* the backface code */
+.cover img {
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+.cover img:nth-child(1) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cover img:nth-child(2) {
+    transform: rotateY(180deg);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.flip-card:hover {
+    transform: perspective(2000px) rotateZ(-10deg);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4),
+        inset 20px 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.flip-card:hover .cover {
+    transform:rotateY(-135deg);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.content .flip {
+    margin-bottom: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.flip {
+    color: red;
+    font-family: 'Creepster', sans-serif;
+}
+
+.flip-text {
+    color: black;
+    font-family: var(--font-family3);
+}
+
+.arrow {
+    padding: 20px 0;
+    color: orange;
+}
+
+.arrow-text { 
+    font-size: larger;
+    padding: 15px;
+    color: orange;
+}
+
+.main-section {
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.wanna {
+    color: var(--black);
+}
+
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 1s;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front, .back{
+    background-color: wheat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+.front {
+    z-index: 10;
+    backface-visibility: hidden;
+    border-left: 3px solid var(--black); 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+
+.about {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: orange;
+    z-index: 10;
+    padding: 30px;
+    font-family: 'Butcherman', sans-serif;
+}
+
+.bout {
+    border-top: 3px solid var(--teal);
+    padding: 30px 0;
+    color: var(--blue);
+    font-family: var(--font-family3);
+}
+
+.author {
+    position: absolute;
+    margin-top: -250px;
+    text-align: center;
+    color: orange;
+    z-index: 10;
+    background-color: var(--bg);
+}
+
+.coder {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    z-index: 10;
+}
+
+.me {
+    position: absolute;
+    margin-top: 100px;
+    align-items: center;
+    z-index: 10;
+    rotate: 180deg;
+}
+
+.bears {
+    position:absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.nyg {
+    position: absolute;
+}
+
+.gp {
+    position: absolute;
+}
+
+.chapter1 {
+    position:absolute;
+    text-align: center;
+    padding-top: 10px;
+    top: 0;
+    font-family: var(--font-family1);
+    color: var(--black);
+}
+
+.chapter1-text {
+    position: absolute;
+    text-align: left;
+    margin-top: 70px;
+    padding: 20px;
+    color: var(--black);
+    font-size: larger;
+    font-family: var(--font-family4);
+}
+
+.gif {
+    position: absolute;
+    bottom: 0;
+}
+
+.codez {
+    position: absolute;
+    top: 0;
+}
+
+.chapter2 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 10px;
+    font-family: var(--font-family1);
+    color: var(--black);
+}
+
+.chapter2-text {
+    position: absolute;
+    text-align: left;
+    padding: 5px;
+    color: var(--black);
+    font-size: larger;
+    font-family: var(--font-family4);
+}
+
+.ralance {
+    position: absolute;
+    left: 20px;
+    border-radius: 40%;
+}
+
+.rog {
+    position: absolute;
+    border-radius: 40%;
+    bottom: 0;
+    right: 0;
+}
+
+.chapter3 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 10px 0;
+    font-family: var(--font-family1);
+    color: black;
+}
+
+.herbo {
+    position: absolute;
+    align-items: center;
+    margin-top: -100px;
+    border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.run {
+    position: absolute;
+    text-align: center;
+    color: red;
+    font-family: 'Creepster', sans-serif;
+    font-size: 300%;
+    z-index: 1;
+    margin-top: -40%;
+    rotate: 45deg;
+}
+
+.chapter3-text {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    font-family: var(--font-family4);
+    font-size: larger;
+}
+
+.chapter4 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 10px 0;
+    color: black;
+    font-family: var(--font-family1);
+}
+
+.proficiencies {
+    font-size: x-large;
+    color: var(--orange);
+}
+
+.endz {
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-family3);
+}
+
+.sm-title {
+    color: var(--orange);
+    font-family: var(--font-family1);
+}
+
+.sm-text {
+    color: var(--orange);
+    font-size: x-large;
+    font-family: var(--font-family4);
+}
+
+.project-name {
+    border-top: 3px solid var(--teal);
+    color: var(--blue);
+    font-family: var(--font-family3);
+    padding: 30px 0;
+}
+
+.img-row {
+    position: relative;
+    width: 400px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 380px;
+    height: 51%;
+    background-color: #00000060;
+    color: orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.img-overlay-blur {
+    backdrop-filter: blur(5px);
+}
+
+.img-overlay > * {
+    transform: translate(-20px);
+    transition: transform 0.5s;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.img-overlay:hover > * {
+    transform: translateX(0);
+}
+
+.demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25%;
+}
+
+.demo:hover {
+    color: var(--blue);
+}
+
+.venedor {
+    color: var(--orange);
+}
+
+.venedor:hover{
+    color: var(--blue);
+}
+
+.store {
+    color: var(--orange);
+}
+
+.store:hover {
+    color: var(--blue);
+}
+
+.figma {
+    color: var(--orange);
+}
+
+.figma:hover {
+    color: var(--blue);
+}
+
+.rest {
+    color: var(--orange);
+}
+
+.rest:hover {
+    color: var(--blue);
+}
+
+.detroix {
+    color: var(--orange);
+}
+
+.detroix:hover {
+    color: var(--blue);
+}
+
+.bloom {
+    color: var(--orange);
+}
+
+.bloom:hover {
+    color: var(--blue);
+}
+
+.project-text {
+    color: var(--orange);
+}
+
+.touch {
+    padding: 30px 0;
+    border-top: 3px solid var(--teal);
+    font-family: var(--font-family3);
+    color: var(--blue);
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-page, .back-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-page {
+    transform: rotateY(180deg);
+}
+
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 1s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: orange;
+}
+
+#page1 {
+    z-index: 5;
+}
+
+#page2 {
+    z-index: 4;
+}
+
+#page3 {
+    z-index: 3;
+}
+
+#page4 {
+    z-index: 2;
+}
+
+#page5 {
+    z-index: 1;
+}
+
+/* -----footer----- */
+
+.footer {
+    height: 100%;
+    /* width: 100%; */
+    /* border: 1px solid green; */
+    background-color: var(--bg);
+}
+
+.colophon {
+    color: aliceblue;
+}
